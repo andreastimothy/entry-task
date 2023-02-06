@@ -19,7 +19,7 @@ func NewRouter(c *RouterConfig) *gin.Engine {
 	r := gin.Default()
 
 	r.Use(cors.New(cors.Config{
-		AllowOrigins:     []string{"http://localhost:3000"},
+		AllowOrigins:     []string{"http://localhost:3000", "https://entry-task-order-fe.netlify.app"},
 		AllowMethods:     []string{"PUT", "PATCH", "DELETE"},
 		AllowHeaders:     []string{"Content-Type", "Content-Length", "Authorization"},
 		ExposeHeaders:    []string{"Content-Length", "Content-Type"},
